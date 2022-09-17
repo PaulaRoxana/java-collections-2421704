@@ -9,7 +9,7 @@ public class Room {
 	private int capacity;
 
 	private double rate;
-	
+
 	private boolean petFriendly;
 
 	public Room(String name, String type, int capacity, double rate) {
@@ -50,7 +50,7 @@ public class Room {
 	public void setRate(double rate) {
 		this.rate = rate;
 	}
-	
+
 	public boolean isPetFriendly() {
 		return petFriendly;
 	}
@@ -77,7 +77,7 @@ public class Room {
 
 	@Override
 	public boolean equals(Object obj) {
-		
+
 		if (this == obj)
 			return true;
 		if (obj == null)
@@ -90,9 +90,7 @@ public class Room {
 				return false;
 		} else if (!name.equals(other.name))
 			return false;
-		if (Double.doubleToLongBits(rate) != Double.doubleToLongBits(other.rate))
-			return false;
-		return true;
+		return Double.doubleToLongBits(rate) == Double.doubleToLongBits(other.rate);
 	}
 
 }
