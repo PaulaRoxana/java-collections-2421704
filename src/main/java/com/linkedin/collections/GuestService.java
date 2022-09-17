@@ -8,12 +8,15 @@ public class GuestService {
 	private List<Guest> checkinList = new ArrayList<>(100);
 
 	public static List<Guest> filterByFavoriteRoom(List<Guest> guests, Room room) {
-
 		/*
 		 *  1. Returns a new collection that contains guests from the provided collection
 		 *  who have indicated the provided room as the first preference in their preferred
 		 *  room list. 
 		 */
+		List<Guest> guestsFilteredByFavRoom = new ArrayList<>();
+		for(Guest guest: guests){
+			if(guest)   vxzvf
+		}
 		
 		return null; 
 
